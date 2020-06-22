@@ -11,7 +11,7 @@
 <p align="center">
 
   <a href="https://rocketseat.com.br">
-    <img alt="Made by Rocketseat" src="https://img.shields.io/badge/made%20by-Rocketseat-%23F8952D">
+    <img alt="Made by Rocketseat" src="https://img.shields.io/badge/made%20by-Carolina Fonseca-%23F8952D">
   </a>
 
   <a href="LICENSE" >
@@ -35,7 +35,6 @@
 - [HTTP: PUT e DELETE](desafios/04-5-put-delete-teacher.md)
 - [Listagem de professores](desafios/04-6-list-teachers.md)
 - [Estruturando estudantes](desafios/04-7-students.md)
-- [Administração do Foodfy](desafios/04-admin-foodfy.md)
 
 ## :calendar: Entrega
 

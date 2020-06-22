@@ -1,0 +1,15 @@
+{
+  "name": "bootcamp-launchbase-desafios-04",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": "https://github.com/caroldf07/bootcamp-launchbase-desafios-04.git",
+  "author": "caroldf07 <carolina.df@outlook.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "nunjucks": "^3.2.1"
+  }
+}
