@@ -17,7 +17,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    background-color:var(--second-color);
+    background-color:var(--third-color);
     color: var(--third-color);
 }
 
@@ -26,6 +26,7 @@ header{
     background-color: var(--principal-color);
     display: flex;
     align-items: center;
+    width: 100%;;
 }
 
 header p img{
@@ -33,7 +34,7 @@ header p img{
 }
 
 header nav{
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 
 header nav a{
