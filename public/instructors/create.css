@@ -54,21 +54,39 @@
 
 .infos h3{
     text-align: center;
+    margin-bottom: 16px;
 }
 
 .infos .item{
     padding: 8px;
 }
 
-.infos .item h4{
+.infos .item label{
     color: var(--principal-color);
+    font-weight: 700;
 }
 
-.infos .item span{
+.infos .item input{
+    padding: 8px;
+    border-style: none;
+}
+
+.infos .item select{
     background-color: var(--third-color);
     color: var(--second-color);
     padding: 8px 16px;
     border-radius: 16px;
     margin-top: 4px;
     display: inline-block;
+}
+
+.infos button{
+    background-color: var(--fourth-color);
+    padding: 8px 16px;
+    width: 100%;
+    border: none;
+    border-radius: 16px;
+    font-weight: 700;
+    color: black
+
 }

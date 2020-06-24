@@ -1,48 +1,79 @@
 {% extends "layout.njk" %}
 
 {% block addstyle %}
-    <link rel="stylesheet" href="/instructors/index.css" type="text/css">
+    <link rel="stylesheet" href="/instructors/create.css" type="text/css">
 {% endblock addstyle %}
 
 {% block content %}
 
-<main class="wraper">
+<main class="cards">
     <section class="cover">
         <img class="EmbeddedMediaImage" alt="Publicação do Instagram compartilhada por @pakuasaopaulo" src="https://instagram.fcgh22-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/p640x640/101789168_188089002467942_7310743703016247631_n.jpg?_nc_ht=instagram.fcgh22-1.fna.fbcdn.net&amp;_nc_cat=102&amp;_nc_ohc=84VvL8jYv8YAX8ASAFg&amp;oh=627a953f77523ca9be6fe6996328d089&amp;oe=5F1B9CD7" srcset="https://instagram.fcgh22-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/p640x640/101789168_188089002467942_7310743703016247631_n.jpg?_nc_ht=instagram.fcgh22-1.fna.fbcdn.net&amp;_nc_cat=102&amp;_nc_ohc=84VvL8jYv8YAX8ASAFg&amp;oh=627a953f77523ca9be6fe6996328d089&amp;oe=5F1B9CD7 640w,https://instagram.fcgh22-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/p750x750/101789168_188089002467942_7310743703016247631_n.jpg?_nc_ht=instagram.fcgh22-1.fna.fbcdn.net&amp;_nc_cat=102&amp;_nc_ohc=84VvL8jYv8YAX8ASAFg&amp;oh=577e7647b89bf5af759e9e096fc2f391&amp;oe=5F1B2B93 750w,https://instagram.fcgh22-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/101789168_188089002467942_7310743703016247631_n.jpg?_nc_ht=instagram.fcgh22-1.fna.fbcdn.net&amp;_nc_cat=102&amp;_nc_ohc=84VvL8jYv8YAX8ASAFg&amp;oh=865808d511935052399a0e64b4762c1c&amp;oe=5F1B8E14 1080w">
     </section>
 
-    <form>
-        <input 
-        type="file" 
-        name="photo"
-        placeholder="formato .jpeg/.png/.jpg"
-        > Foto
+    <form class="infos" method="POST" action="/instructors">
+        <h3>Preencha os campos abaixo:</h3>
 
-        <input 
-        type="text" 
-        name="name"
-        placeholder="Carolina Fonseca"
-        >Nome Completo
+        <div class="item">
+            <label for="photo">Foto do(a) instrutor(a)</label>
+            <input 
+            type="file" 
+            name="photo"
+            placeholder="formato .jpeg/.png/.jpg"
+            >
+        </div>
 
-        <input 
-        type="date" 
-        name="birth"
-        >Data de nascimento
+        <div class="item">
+            <label for="name">Nome Completo</label>
+            <input 
+            type="text" 
+            name="name"
+            placeholder="Carolina Fonseca"
+            >
+        </div>
 
-        <input 
-        type="text" 
-        name="disciplines"
-        >Modalidade(s) praticada(s)
+        <div class="item">
+            <label for="birth">Data de nascimento</label>
+            <input 
+            type="date" 
+            name="birth"
+            >
+        </div>
 
-        <input 
-        type="text" 
-        name="disciplines"
-        >Modalidade(s) ministrada(s)
+        <div class="item">
+            <label for="main">Modalidade Principal</label>
+                <select name="main">
+                    <option value="acrobacia">Acrobacia</option>
+                    <option value="armas de corte">Armas de corte</option>
+                    <option value="arqueria">Arqueria</option>
+                    <option value="arte marcial">Arte marcial</option>
+                    <option value="pa-kua chi">Pa-kua Chi</option>
+                    <option value="ritmo">Ritmo</option>
+                    <option value="tai-chi">Tai-chi</option>
+                    <option value="yoga chinesa">Yoga chinesa</option>
+                </select>
+        </div>
 
-        <input 
-        type="date" 
-        name="created_at"
-        >Desde
+        <div class="item">
+            <label for="disciplines">Modalidade(s) praticada(s)</label>
+                <input 
+                type="text" 
+                name="disciplines"
+                placeholder="Arte Marcial, Armas, Arqueria"
+                >
+        </div>
+
+        <div class="item">
+            <label for="classes">Modalidade(s) ministrada(s)</label>
+            <input 
+            type="text" 
+            name="classes"
+            placeholder="Arte Marcial, Armas"
+            >
+        </div>
+
+        <button type="submit">Enviar</button>
+
     </form>
 </main>
 

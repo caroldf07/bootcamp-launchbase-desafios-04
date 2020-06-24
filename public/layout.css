@@ -26,7 +26,10 @@ header{
     background-color: var(--principal-color);
     display: flex;
     align-items: center;
-    width: 100%;;
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; 
 }
 
 header p img{

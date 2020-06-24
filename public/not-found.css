@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
 *{
     padding: 0;
@@ -8,13 +8,15 @@
 }
 
 :root{
-    --principal-color: #A80813;
+    --principal-color: #c40000;
     --second-color: #D7DEC6;
-    --third-color: #176877;
-    --background-default:#1D191D;
+    --third-color:#1D191D;
+    --fourth-color: gold;
+
 }
 
-h1{
+h1,h2,h3,h4,h5,h6 {
+    color: var(--fourth-color);
     text-align: center;
-    margin: 50px auto;
+    margin-top: 24px;
 }
