@@ -14,65 +14,7 @@
     <form class="infos" method="POST" action="/instructors">
         <h3>Preencha os campos abaixo:</h3>
 
-        <div class="item">
-            <label for="photo">Foto do(a) instrutor(a)</label>
-            <input 
-            type="url" 
-            name="photo"
-            placeholder="https://"
-            >
-        </div>
-
-        <div class="item">
-            <label for="name">Nome Completo</label>
-            <input 
-            type="text" 
-            name="name"
-            placeholder="Carolina Fonseca"
-            >
-        </div>
-
-        <div class="item">
-            <label for="birth">Data de nascimento</label>
-            <input 
-            type="date" 
-            name="birth"
-            >
-        </div>
-
-        <div class="item">
-            <label for="main">Modalidade Principal</label>
-                <select name="main">
-                    <option value="acrobacia">Acrobacia</option>
-                    <option value="armas de corte">Armas de corte</option>
-                    <option value="arqueria">Arqueria</option>
-                    <option value="arte marcial">Arte marcial</option>
-                    <option value="pa-kua chi">Pa-kua Chi</option>
-                    <option value="ritmo">Ritmo</option>
-                    <option value="tai-chi">Tai-chi</option>
-                    <option value="yoga chinesa">Yoga chinesa</option>
-                </select>
-        </div>
-
-        <div class="item">
-            <label for="disciplines">Modalidade(s) praticada(s)</label>
-                <input 
-                type="text" 
-                name="disciplines"
-                placeholder="Arte Marcial, Armas, Arqueria"
-                >
-        </div>
-
-        <div class="item">
-            <label for="classes">Modalidade(s) ministrada(s)</label>
-            <input 
-            type="text" 
-            name="classes"
-            placeholder="Arte Marcial, Armas"
-            >
-        </div>
-
-        <button type="submit">Enviar</button>
+        {% include "instructors/items.njk" %}
 
     </form>
 </main>

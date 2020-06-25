@@ -3,23 +3,62 @@
 {% block addstyle %}
     <link rel="stylesheet" href="/instructors/index.css" type="text/css">
     <link rel="stylesheet" href="/instructors/create.css" type="text/css">
-
 {% endblock addstyle %}
 
 {% block content %}
 
 <main class="cards">
     <section class="cover">
-        <img class="EmbeddedMediaImage" alt="foto do instrutor" src="{{ infos.photo}}">
+        <img class="EmbeddedMediaImage" alt="foto do instrutor" src="{{ infos.photo }}">
     </section>
 
     <section class="infos">
         <h3>Informações</h3>
 
-        {% include "instructors/items.njk" %}
+        <div class="item">
+            <h4>Nome Completo</h4>
+            <p>{{ infos.name }}</p>
+        </div>
 
-        
-        <a href="/instructors/edit" class="btn">Editar</a>
+        <div class="item">
+            <h4>Idade</h4>
+            <p>{{ infos.age }}</p>
+        </div>
+
+        <div class="item">
+            <h4>Modalidade Principal</h4>
+            <p>
+                <span>{{ infos.main }}</span>
+            </p>
+        </div>
+
+        <div class="item">
+            <h4>Modalidade(s) praticada(s)</h4>
+            <p>
+                {% for info in infos.disciplines %}
+                    <span>{{ info }}</span>
+                {% endfor %}
+            </p>
+        </div>
+
+        <div class="item">
+            <h4>Modalidade(s) ministrada(s)</h4>
+            <p>
+                {% for info in infos.classes %}
+                    <span>{{ info }}</span>
+                {% endfor %}
+            </p>
+        </div>
+
+        <div class="item">
+            <h4>Desde</h4>
+            <p>{{ infos.created_at }}</p>
+        </div>
+
+        <div class="btns">
+            <a class="btn edit" href="#">Editar</a>
+            <a class="btn delete" href="#">Excluir</a>
+        </div>
         
     </section>
 </main>

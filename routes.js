@@ -18,6 +18,8 @@ routes.get("/instructors/create", (req,res) => {
 
 routes.get("/instructors/:id", instructors.show)
 
+routes.get("/instructors/:id/edit", instructors.edit)
+
 // routes.get("/students", (req,res) => {
 //     return res.render("students")
 // })

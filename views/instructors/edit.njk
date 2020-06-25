@@ -1,6 +1,7 @@
 {% extends "layout.njk" %}
 
 {% block addstyle %}
+    <link rel="stylesheet" href="/instructors/index.css" type="text/css">
     <link rel="stylesheet" href="/instructors/create.css" type="text/css">
 {% endblock addstyle %}
 
@@ -8,7 +9,7 @@
 
 <main class="cards">
     <section class="cover">
-        <img class="EmbeddedMediaImage" alt="Publicação do Instagram compartilhada por @pakuasaopaulo" src="https://instagram.fcgh22-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/p640x640/101789168_188089002467942_7310743703016247631_n.jpg?_nc_ht=instagram.fcgh22-1.fna.fbcdn.net&amp;_nc_cat=102&amp;_nc_ohc=84VvL8jYv8YAX8ASAFg&amp;oh=627a953f77523ca9be6fe6996328d089&amp;oe=5F1B9CD7" srcset="https://instagram.fcgh22-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/p640x640/101789168_188089002467942_7310743703016247631_n.jpg?_nc_ht=instagram.fcgh22-1.fna.fbcdn.net&amp;_nc_cat=102&amp;_nc_ohc=84VvL8jYv8YAX8ASAFg&amp;oh=627a953f77523ca9be6fe6996328d089&amp;oe=5F1B9CD7 640w,https://instagram.fcgh22-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/p750x750/101789168_188089002467942_7310743703016247631_n.jpg?_nc_ht=instagram.fcgh22-1.fna.fbcdn.net&amp;_nc_cat=102&amp;_nc_ohc=84VvL8jYv8YAX8ASAFg&amp;oh=577e7647b89bf5af759e9e096fc2f391&amp;oe=5F1B2B93 750w,https://instagram.fcgh22-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/101789168_188089002467942_7310743703016247631_n.jpg?_nc_ht=instagram.fcgh22-1.fna.fbcdn.net&amp;_nc_cat=102&amp;_nc_ohc=84VvL8jYv8YAX8ASAFg&amp;oh=865808d511935052399a0e64b4762c1c&amp;oe=5F1B8E14 1080w">
+        <img class="EmbeddedMediaImage" alt="foto do instrutor" src="{{ infos.photo }}">
     </section>
 
     <form class="infos" method="POST" action="/instructors">
@@ -16,7 +17,7 @@
 
         {% include "instructors/items.njk" %}
 
-        <button type="submit">Salvar</button>
+        <input type="hidden" name="" id="{{ infos.id }}">
         
     </form>
 </main>

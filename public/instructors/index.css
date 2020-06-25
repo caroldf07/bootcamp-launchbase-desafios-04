@@ -41,11 +41,15 @@
     height: 100%;
 }
 
+.cards .cover{
+    display: flex;
+    align-items: center;
+}
+
 .cards .cover img{
     max-width: 100%;
-    float: left;
     border-radius: 8px;
-    margin-top: 2px;
+    height: 360px;
 }
 
 .infos,.cover{

@@ -41,11 +41,15 @@
     height: 100%;
 }
 
+.cards .cover{
+    display: flex;
+    align-items: center;
+}
+
 .cards .cover img{
-    max-width: 100%;
-    float: left;
+    width: 100%;
     border-radius: 8px;
-    margin-top: 2px;
+    height: 360px;
 }
 
 .infos,.cover{
@@ -64,11 +68,14 @@
 .infos .item label{
     color: var(--principal-color);
     font-weight: 700;
+    display: block;
+    margin-bottom: 8px;
 }
 
-.infos .item input{
+.infos .item input,.infos .item select{
     padding: 8px;
     border-style: none;
+    width: 100%;
 }
 
 .infos .item select{
@@ -91,8 +98,20 @@
 
 }
 
-.btn a{
+.btns{
+    display: flex;
+    justify-content: space-between;
+}
+
+a.btn {
     display: block;
     text-align: center;
     text-decoration: none;
+    width: 45%;
+
+}
+
+a.btn.delete {
+    background-color: red;
+    color:white;
 }

@@ -5,12 +5,13 @@
 {% endblock addstyle %}
 
 {% block content %}
-            <div class="item">
+        <div class="item">
             <label for="photo">Foto do(a) instrutor(a)</label>
             <input 
-            type="file" 
+            type="url" 
             name="photo"
-            placeholder="formato .jpeg/.png/.jpg"
+            placeholder="https://"
+            value="{{ infos.photo }}"
             >
         </div>
 
@@ -66,5 +67,7 @@
             value="{{ infos.classes }}"
             >
         </div>
+
+        <button type="submit">Salvar</button>
 
 {% endblock content %}
