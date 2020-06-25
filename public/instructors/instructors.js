@@ -79,3 +79,30 @@ exports.edit = function (req,res){
 
     return res.render("instructors/edit", { infos})
 }
+
+exports.put = function(req,res){
+    const { id } = req.params
+
+    const foundInstructor = data.instructors.filter((instructor) => {
+        return instructor.id == id
+    })
+
+    if(!foundInstructor){
+        return res.send("Instrutor não encontrado")
+    }
+
+}
+
+exports.delete = function(req,res){
+    const { id } = req.params
+
+    const foundInstructor = data.instructors.filter((instructor) => {
+        if(instructor.id != id)
+    })
+
+    if(!foundInstructor){
+        return res.send("Instrutor não encontrado")
+    }
+
+
+}
