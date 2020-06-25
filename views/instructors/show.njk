@@ -1,0 +1,27 @@
+{% extends "layout.njk" %}
+
+{% block addstyle %}
+    <link rel="stylesheet" href="/instructors/index.css" type="text/css">
+    <link rel="stylesheet" href="/instructors/create.css" type="text/css">
+
+{% endblock addstyle %}
+
+{% block content %}
+
+<main class="cards">
+    <section class="cover">
+        <img class="EmbeddedMediaImage" alt="foto do instrutor" src="{{ infos.photo}}">
+    </section>
+
+    <section class="infos">
+        <h3>Informações</h3>
+
+        {% include "instructors/items.njk" %}
+
+        
+        <a href="/instructors/edit" class="btn">Editar</a>
+        
+    </section>
+</main>
+
+{% endblock content %}

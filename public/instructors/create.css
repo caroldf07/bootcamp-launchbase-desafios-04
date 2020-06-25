@@ -80,7 +80,7 @@
     display: inline-block;
 }
 
-.infos button{
+.infos button, .btn{
     background-color: var(--fourth-color);
     padding: 8px 16px;
     width: 100%;
@@ -89,4 +89,10 @@
     font-weight: 700;
     color: black
 
+}
+
+.btn a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
 }

@@ -1,0 +1,34 @@
+{
+    "instructors": [
+        {
+            "id": 1,
+            "photo": "https://i.imgur.com/9gdiWqW.jpg",
+            "name": "Carolina Fonseca",
+            "birth": 752630400000,
+            "main": "acrobacia",
+            "disciplines": "arte marcial, armas, arqueria",
+            "classes": "arte marcial, armas",
+            "created_at": 1593032775646
+        },
+        {
+            "id": 2,
+            "photo": "6b84878d-76ef-48ae-90e3-cc3f0e56bb27.jpg",
+            "name": "Carolina Fonseca",
+            "birth": 752630400000,
+            "main": "acrobacia",
+            "disciplines": "arte marcial, armas, arqueria",
+            "classes": "arte marcial, armas",
+            "created_at": 1593032783295
+        },
+        {
+            "id": 3,
+            "photo": "6b84878d-76ef-48ae-90e3-cc3f0e56bb27.jpg",
+            "name": "Carolina Fonseca",
+            "birth": 752630400000,
+            "main": "acrobacia",
+            "disciplines": "arte marcial, armas, arqueria",
+            "classes": "arte marcial, armas",
+            "created_at": 1593032850280
+        }
+    ]
+}
