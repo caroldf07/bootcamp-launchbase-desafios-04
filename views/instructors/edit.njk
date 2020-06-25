@@ -12,12 +12,10 @@
         <img class="EmbeddedMediaImage" alt="foto do instrutor" src="{{ infos.photo }}">
     </section>
 
-    <form class="infos" method="POST" action="/instructors?_method='PUT'">
+    <form class="infos" method="POST" action="/instructors?_method=PUT">
         <h3>Editar dados:</h3>
 
         {% include "instructors/items.njk" %}
-
-        <input type="hidden" name="" id="{{ infos.id }}">
         
     </form>
 </main>

@@ -111,7 +111,7 @@ a.btn {
 
 }
 
-a.btn.delete {
+button.btn.delete {
     background-color: red;
     color:white;
 }
