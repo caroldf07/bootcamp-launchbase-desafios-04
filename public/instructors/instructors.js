@@ -82,7 +82,7 @@ exports.put = function(req,res){
     const { id } = req.body
     let index = 0
 
-    const foundInstructor = data.instructors.filter((instructor, foundIndex) => {
+    const foundInstructor = data.instructors.find((instructor, foundIndex) => {
         if(instructor.id == id){
             index = foundIndex
             return true
