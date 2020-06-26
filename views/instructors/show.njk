@@ -58,7 +58,7 @@
         <div class="btns">
             <a class="btn edit" href="/instructors/{{ infos.id }}/edit">Editar</a>
             
-            <form action="/instructor?_method=DELETE" method="post">
+            <form action="/instructors?_method=DELETE" method="post">
                 <button class="btn delete" type="submit">Excluir</button>
                 <input type="hidden" name="id" value="{{ infos.id }}">
             </form>
