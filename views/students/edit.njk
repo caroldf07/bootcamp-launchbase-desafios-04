@@ -1,0 +1,23 @@
+{% extends "layout.njk" %}
+
+{% block addstyle %}
+    <link rel="stylesheet" href="/students/index.css" type="text/css">
+    <link rel="stylesheet" href="/students/create.css" type="text/css">
+{% endblock addstyle %}
+
+{% block content %}
+
+<main class="cards">
+    <section class="cover">
+        <img class="EmbeddedMediaImage" alt="foto do instrutor" src="{{ infos.photo }}">
+    </section>
+
+    <form class="infos" method="POST" action="/students?_method=PUT">
+        <h3>Editar dados:</h3>
+
+        {% include "students/items.njk" %}
+        <input type="hidden" name="id" value="{{ infos.id }}">
+    </form>
+</main>
+
+{% endblock content %}
