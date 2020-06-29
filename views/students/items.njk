@@ -21,6 +21,16 @@
         </div>
 
         <div class="item">
+            <label for="email">E-mail</label>
+            <input 
+            type="email" 
+            name="email"
+            placeholder="email@hotmail.com"
+            value="{{ infos.email }}"
+            >
+        </div>
+
+        <div class="item">
             <label for="birth">Data de nascimento</label>
             <input 
             type="date" 
@@ -44,6 +54,26 @@
         </div>
 
         <div class="item">
+            <label for="belt">Faixa</label>
+                <select name="belt" value="{{ infos.belt }}">
+                    <option value="branca">Branca</option>
+                    <option value="amarela">Amarela</option>
+                    <option value="laranja">Laranja</option>
+                    <option value="verde">Verde</option>
+                    <option value="cinza">Cinza</option>
+                    <option value="azul">Azul</option>
+                    <option value="vermelha">Vermelha</option>
+                    <option value="preta i">Preta I</option>
+                    <option value="preta ii">Preta II</option>
+                    <option value="preta iii">Preta III</option>
+                    <option value="preta iv">Preta IV</option>
+                    <option value="preta v">Preta V</option>
+                    <option value="preta vi">Preta VI</option>
+                    <option value="preta vii">Preta VII</option>
+                </select>
+        </div>
+
+        <div class="item">
             <label for="disciplines">Modalidade(s) praticada(s)</label>
                 <input 
                 type="text" 
@@ -53,15 +83,6 @@
                 >
         </div>
 
-        <div class="item">
-            <label for="classes">Modalidade(s) ministrada(s)</label>
-            <input 
-            type="text" 
-            name="classes"
-            placeholder="Arte Marcial, Armas"
-            value="{{ infos.classes }}"
-            >
-        </div>
         <button type="submit">Salvar</button>
 
 

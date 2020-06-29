@@ -11,6 +11,17 @@
             "created_at": 1593383730729
         }
     ],
-
-    "students":[]
+    "students": [
+        {
+            "id": 1,
+            "photo": "https://i.imgur.com/9gdiWqW.jpg",
+            "name": "Carolina Fonseca",
+            "birth": 752630400000,
+            "email": "carolina.df@outlook.com",
+            "main": "arte marcial",
+            "belt": "azul",
+            "disciplines": "arte marcial, arqueria, tai chi, pakua chi",
+            "created_at": 1593389877397
+        }
+    ]
 }

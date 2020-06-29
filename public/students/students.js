@@ -15,16 +15,17 @@ exports.post = function (req,res) {
     req.body.id = Number(data.students.length + 1)
     req.body.created_at = Date.now()
 
-    const { id, photo, name, birth, main, disciplines, classes, created_at} = req.body
+    const { id, photo, name, birth, email, main, belt, disciplines, created_at} = req.body
 
     data.students.push({
         id,
         photo,
         name,
         birth,
+        email,
         main,
+        belt,
         disciplines,
-        classes,
         created_at
     })
 
@@ -52,7 +53,6 @@ exports.show = function (req,res){
         age: age(foundStudent.birth),
         created_at: new Intl.DateTimeFormat("pt-BR").format(foundStudent.created_at),
         disciplines: foundStudent.disciplines.split(","),
-        classes: foundStudent.classes.split(",")
     }
 
     return res.render("students/show", { infos })
@@ -94,10 +94,10 @@ exports.put = function(req,res){
     }
 
     const student = {
+        id: Number(req.body.id),
         ...foundStudent,
         ...req.body,
-        birth: Date.parse(req.body.birth),
-        id: Number(req.body.id)
+        birth: Date.parse(req.body.birth)
     }
 
     data.students[index] = student
