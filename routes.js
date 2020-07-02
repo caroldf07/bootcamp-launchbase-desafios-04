@@ -8,7 +8,7 @@ routes.get("/", (req,res) => {
 })
 
 routes.get("/instructors", (req,res) => {
-    return res.render("instructors/index")
+    return res.render("instructors/index", { instructors })
 })
 
 routes.post("/instructors", instructors.post)
@@ -26,7 +26,7 @@ routes.put("/instructors", instructors.put)
 routes.delete("/instructors", instructors.delete)
 
 routes.get("/students", (req,res) => {
-  return res.render("students/index")
+  return res.render("students/index", { students })
 })
 
 routes.post("/students", students.post)

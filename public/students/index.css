@@ -79,6 +79,6 @@
 
 .infos .item.belt-color span{
     width: 100%;
-    height: 25px;
     color: var(--third-color);
+    font-size: 2px;
 }
