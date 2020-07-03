@@ -6,22 +6,25 @@
 
 {% block content %}
 
-<main class="table-container">
+<main class="cards table-container">
+    <a href="/instructors/create">Nove Instrutore</a>
     <table>
         <thead>
             <tr>
                 <th>Nome</th>
                 <th>Ministra</th>
                 <th>Pratica</th>
+                <th>Ação</th>
             </tr>
         </thead>
 
         <tbody>
             {% for instructor in instructors %}
                 <tr>
-                    <td>{{ instructor.name }}</td>
+                    <td><span style="background-image: url ({{ instructor.photo }})"></span>{{ instructor.name }}</td>
                     <td>{{ instructor.classes }}</td>
                     <td>{{ instructor.disciplines }}</td>
+                    <td><a href="/instructors/{{ instructor.id }}">Ver</a></td>
                 </tr>
             {% endfor %}
         </tbody>

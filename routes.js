@@ -23,9 +23,7 @@ routes.put("/instructors", instructors.put)
 
 routes.delete("/instructors", instructors.delete)
 
-routes.get("/students", (req,res) => {
-  return res.render("students/index", { students })
-})
+routes.get("/students", students.index)
 
 routes.post("/students", students.post)
 

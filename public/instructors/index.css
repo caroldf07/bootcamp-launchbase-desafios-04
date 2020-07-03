@@ -24,6 +24,53 @@
     animation: card 700ms cubic-bezier(0.4, 0.01, 0.86, 1.17);
 }
 
+.cards a{
+    text-decoration: none;
+    background-color: var(--fourth-color);
+    padding: 4px 8px;
+    width: 100%;
+    border: none;
+    border-radius: 16px;
+    font-weight: 700;
+    color: black;
+}
+
+.table-container{
+    display: block;
+    width: 90%;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.table-container table{
+    width: 100%;
+    border-spacing: 0;
+    margin-top: 32px;
+}
+
+.table-container table tbody{
+    text-align: center;
+}
+
+.table-container table tbody td{
+    padding: 4px;
+}
+
+tbody tr td:first-child{
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    align-items: center;
+}
+
+tbody tr td:first-child span{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+
 @keyframes card {
     from{
         opacity: 0;
