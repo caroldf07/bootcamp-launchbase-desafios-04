@@ -13,13 +13,13 @@
     ],
     "students": [
         {
-            "id": 1,
+            "id": "1",
             "photo": "https://i.imgur.com/9gdiWqW.jpg",
             "name": "Carolina Fonseca",
-            "birth": 752630400000,
+            "birth": 726364800000,
             "email": "carolina.df@outlook.com",
-            "main": "arte marcial",
-            "belt": "azul",
+            "main": "acrobacia",
+            "belt": "branca",
             "disciplines": "arte marcial, arqueria, tai chi, pakua chi",
             "created_at": 1593389877397
         }

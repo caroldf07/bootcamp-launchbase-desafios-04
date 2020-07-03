@@ -36,9 +36,8 @@
 - [Listagem de professores](desafios/04-6-list-teachers.md)
 - [Estruturando estudantes](desafios/04-7-students.md)
 
-## :calendar: Entrega
-
-Esses desafios **não precisam ser entregues** e não receberão correção. Após concluí-los, adicionar esses códigos ao seu Github é uma boa forma de demonstrar seus conhecimentos para oportunidades futuras.
+## Projeto Finalizado:
+![](https://i.imgur.com/TA2CWlX.gif)
 
 ## :memo: Licença
 
